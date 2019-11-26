@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=gbk&zeroDateTimeBehavior=convertToNull&serverTimezone=GMT
+    username: root
+    password: 123456
+
+  jpa:
+    hibernate:
+      ddl-auto: update  #第一次建表create  后面用update
+    show-sql: true
+    # 定义数据库引擎为innodb
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+server:
+  port: 8090
+
